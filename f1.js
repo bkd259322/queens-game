@@ -29,7 +29,7 @@ function clickBox(event){
   const x =parseInt(event.target.getAttribute('row'));
   const y =parseInt(event.target.getAttribute('col'));
 
-  if (event.target.classList.contains('cell')) {
+  if(event.target.classList.contains('cell')){
     if(matrix[x][y]===1) {
       event.target.textContent="";
       matrix[x][y] =0;
